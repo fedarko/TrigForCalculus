@@ -1,0 +1,103 @@
+<!--
+ Trig For Calculus: Reference App for Trigonometric Derivatives and Integrals
+ Copyright (C) 2013 Marcus Fedarko
+ Contact Email: marcus.fedarko@gmail.com
+
+ This file is part of Trig For Calculus.
+ 
+   	 Trig For Calculus is free software: you can redistribute it and/or
+  modify it under the terms of the GNU General Public License as published
+  by the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  Trig For Calculus is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with Trig For Calculus.  If not, see <http://www.gnu.org/licenses/>.
+  
+  The full text of the GNU General Public License version 3 can be found in the
+  source code root directory as COPYING.txt.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TextView
+	        android:id="@+id/mainHeader"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="15dp"
+	        android:gravity="center_horizontal"
+	        android:text="@string/mainScreenTitle"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <Button
+	        android:id="@+id/derivativesButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/mainHeader"
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/DerivativesButton"
+	        android:onClick="goToTrigDerivativesScreen" />
+	
+	    <Button
+	        android:id="@+id/integralsButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/derivativesButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/IntegralsButton"
+	        android:onClick="goToTrigIntegralsScreen" />
+	
+		<View
+		    android:id="@+id/DividerBar"
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@+id/integralsButton"
+		    android:layout_marginTop="10dp"
+		    android:background="@color/divider_gray" />    
+	     
+	    <TextView
+	        android:id="@+id/atMainHeader"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/DividerBar"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="15dp"
+	        android:gravity="center_horizontal"
+	        android:text="@string/atMainScreenTitle"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <Button
+	        android:id="@+id/atDerivativesButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/atMainHeader"
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/atDerivativesButton"
+	        android:onClick="goToArctrigDerivativesScreen" />
+	
+	    <Button
+	        android:id="@+id/atDntegralsButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/atDerivativesButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/atIntegralsButton"
+	        android:onClick="goToArctrigIntegralsScreen" />
+    
+	</RelativeLayout>
+</ScrollView>

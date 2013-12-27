@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Trig For Calculus: Reference App for Trigonometric Derivatives and Integrals
+ Copyright (C) 2013 Marcus Fedarko
+ Contact Email: marcus.fedarko@gmail.com
+
+ This file is part of Trig For Calculus.
+ 
+   	 Trig For Calculus is free software: you can redistribute it and/or
+  modify it under the terms of the GNU General Public License as published
+  by the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  Trig For Calculus is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with Trig For Calculus.  If not, see <http://www.gnu.org/licenses/>.
+  
+  The full text of the GNU General Public License version 3 can be found in the
+  source code root directory as COPYING.txt.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mfedarko.trigforcalculus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="1"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mfedarko.trigforcalculus.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mfedarko.trigforcalculus.RegularIntegralsActivity"
+            android:label="@string/title_activity_regular_integrals"
+            android:parentActivityName="com.mfedarko.trigforcalculus.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mfedarko.trigforcalculus.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.mfedarko.trigforcalculus.RegularDerivativesActivity"
+            android:label="@string/title_activity_regular_derivatives"
+            android:parentActivityName="com.mfedarko.trigforcalculus.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mfedarko.trigforcalculus.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.mfedarko.trigforcalculus.ArctrigDerivativesActivity"
+            android:label="@string/title_activity_arctrig_derivatives"
+            android:parentActivityName="com.mfedarko.trigforcalculus.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mfedarko.trigforcalculus.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.mfedarko.trigforcalculus.ArctrigIntegralsActivity"
+            android:label="@string/title_activity_arctrig_integrals"
+            android:parentActivityName="com.mfedarko.trigforcalculus.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mfedarko.trigforcalculus.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.mfedarko.trigforcalculus.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.mfedarko.trigforcalculus.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mfedarko.trigforcalculus.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

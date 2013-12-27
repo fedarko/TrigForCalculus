@@ -1,0 +1,112 @@
+<!--
+ Trig For Calculus: Reference App for Trigonometric Derivatives and Integrals
+ Copyright (C) 2013 Marcus Fedarko
+ Contact Email: marcus.fedarko@gmail.com
+
+ This file is part of Trig For Calculus.
+ 
+   	 Trig For Calculus is free software: you can redistribute it and/or
+  modify it under the terms of the GNU General Public License as published
+  by the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  Trig For Calculus is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with Trig For Calculus.  If not, see <http://www.gnu.org/licenses/>.
+  
+  The full text of the GNU General Public License version 3 can be found in the
+  source code root directory as COPYING.txt.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TextView
+	        android:id="@+id/aboutTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/aboutTitle"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <TextView
+	        android:id="@+id/versionInfo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@+id/aboutTitle"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/versionNumberAndDate" />  
+	    
+	    <TextView
+	        android:id="@+id/acknowledgmentsTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@+id/versionInfo"
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/acknowledgmentsTitle"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/acknowledgmentsInfo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@+id/acknowledgmentsTitle"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/acknowledgmentsInfo" />
+	    
+	    <TextView
+	        android:id="@+id/sourceCodeTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@+id/acknowledgmentsInfo"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/sourceCodeTitle"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/sourceCodeInfo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@+id/sourceCodeTitle"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/sourceCodeInfo" />
+	        
+	    <TextView
+	        android:id="@+id/authorTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@+id/sourceCodeInfo"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/authorTitle"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/authorInfo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@+id/authorTitle"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/authorInfo"
+	        android:autoLink="email" />
+
+	    <Button
+	        android:id="@+id/otherAppsButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@+id/authorInfo"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/otherAppsButton"
+	        android:onClick="openOtherApps" />	   
+	</RelativeLayout>
+</ScrollView>

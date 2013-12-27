@@ -1,0 +1,50 @@
+<!--
+ Trig For Calculus: Reference App for Trigonometric Derivatives and Integrals
+ Copyright (C) 2013 Marcus Fedarko
+ Contact Email: marcus.fedarko@gmail.com
+
+ This file is part of Trig For Calculus.
+ 
+   	 Trig For Calculus is free software: you can redistribute it and/or
+  modify it under the terms of the GNU General Public License as published
+  by the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  Trig For Calculus is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with Trig For Calculus.  If not, see <http://www.gnu.org/licenses/>.
+  
+  The full text of the GNU General Public License version 3 can be found in the
+  source code root directory as COPYING.txt.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TextView
+	        android:id="@+id/atIntegralsHeader"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/atIntegralsButton"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <ImageView
+	        android:id="@+id/atIntegralsImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/atIntegralsHeader"
+	        android:layout_marginTop="10dp"
+	        android:layout_alignParentLeft="true"
+	        android:src="@drawable/arctrig_integrals"
+	        android:contentDescription="@string/imageErrorText" />
+	</RelativeLayout>
+</ScrollView>
