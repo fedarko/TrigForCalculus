@@ -5,3 +5,5 @@ A simple Android reference app licensed under the GPL v3 that contains derivativ
 
 If you have any comments, criticisms, bugs to report, etc., please
 email me at marcus.fedarko@gmail.com (personal) or mfedarko.apps@gmail.com (professional).
+
+Thanks!
